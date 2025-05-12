@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebShop Suite">
+    <test name="WebShop Tests">
+        <parameter name="browser" value="chrome"/> <!-- تغيير القيمة حسب الحاجة -->
+        <classes>
+            <class name="com.webshop.tests.HomeTest"/>
+            <class name="com.webshop.tests.CheckOutTest"/>
+            <class name="com.webshop.tests.OrderHistoryTest"/>
+
+
+        </classes>
+    </test>
+</suite>

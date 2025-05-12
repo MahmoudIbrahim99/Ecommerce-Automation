@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Tests Suite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Ecommerce App">
+        <parameter name="browser" value="firefox"/> <!-- تغيير القيمة حسب الحاجة -->
+        <classes>
+            <class name="com.webshop.tests.RegisterTest"/>
+            <class name="com.webshop.tests.LoginTest"/>
+            <class name="com.webshop.tests.HomeTest"/>
+            <class name="com.webshop.tests.CheckOutTest"/>
+            <class name="com.webshop.tests.OrderHistoryTest"/>
+        </classes>
+    </test>
+</suite>
+
+
+
+
